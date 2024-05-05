@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.container {
+ /*  position: relative;
+  z-index: 5;
+  max-width: 100rem;
+  padding: 10 2rem;
+  margin: 2% auto; */
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+  height: 250px;
+  box-shadow: 0 1px 3px --2px rgb(237, 227, 227);
+}
+/* .container {
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  align-items:first baseline;
+} */
+header {
+  width: 100%;
+  height:100%;
+  background-color:rgb(233, 223, 223);
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+}
+
+/* nav {
+  width:auto;
+  position: relative;
+  z-index: 200;
+  justify-content: space-around;
+  display: flex;
+} */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  align-items:first baseline;
+  left: 200rem;
+  
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+.menu  {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+}
+
+/* .menu a {
+  display:flex;
+  padding: 0.9rem 1.2rem;
+  color: var(--dark-one);
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1;
+  transition: 0.3s;
+  left:20%;
+}
+
+.menu a.active {
+  background-color: var(--main-color);
+  color: var(--light-one);
+  border-radius: 2rem;
+  font-size: 1rem;
+  padding: 0.9rem 2.1rem;
+  margin-left: 1rem;
+}
+
+.menu a:hover {
+  color: var(--main-color);
+}
+
+.menu a.active:hover {
+  color: var(--light-one);
+  background-color: var(--secondary-color);
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.header-content .container.grid-2 {
+  grid-template-columns: 2.5fr 3.5fr;
+  min-height: calc(100vh - 6rem);
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.header-title {
+  font-size: 3.8rem;
+  line-height: 0.8;
+  color:aqua;
+}
+
+.header-title span {
+  color: var(--main-color);
+}
+
+.header-content .text {
+  margin: 2.15rem 0;
+}
+
+.header-content .image .img-element {
+  max-width: 750px;
+} */
+
+  /* nuevos styles*/
+  @import url("https://fonts.google.com/share?selection.family=Pacifico");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+body,
+html {
+ 
+  background: #e699ec;
+  font-family: "Pacifico", sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+  height: 50vh;
+  list-style: none;
+}
+
+.menu li {
+  display: flex;
+  width: 125px;
+  height: 50px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+  left: 0%;
+
+  a {
+    font-size: 22px;
+    color: #777;
+    text-decoration: none;
+    transition: all 0.45s;
+  }
+
+  &:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    animation: line 1s;
+  }
+
+  &:hover a {
+    color: #e783d0;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+/*efecto para el h1*/

@@ -1,0 +1,18 @@
+.cuerpo{
+    display: flex;
+    position: relative;
+    margin: 8rem 0.89rem;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #0a0a0a;
+   
+}
+
+ h2 {
+    font-size: 100px;
+}
+p{
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
