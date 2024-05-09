@@ -1,0 +1,29 @@
+/* 
+h1{
+    text-align: center;
+    margin: 50px;
+}
+
+#menu li{
+
+    padding: 60px;
+    list-style-type: none;
+   
+ 
+    
+}
+
+h3{
+    text-align: center;
+
+} */
+
+.imagenes{
+    border-radius: 50px;
+    margin: 0 auto 2em;
+    width: 200px;
+    height: 200px;
+    
+}
+
+  
