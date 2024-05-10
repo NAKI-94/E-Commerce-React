@@ -1,33 +1,33 @@
-import React, { useState } from 'react'
+
 import all_product from '../../assets/productos/all_product'
 
-export const Productos = (props) => {
-  console.log(all_product);
+import Titulo from '../../components/Titulo/Titulo';
+import Product from '../Product';
+
+const Productos = () => {
+   const ProductoEncontrado =all_product.find(producto => producto.id)
+   console.log(ProductoEncontrado);
  
   return (
+    <div>
+      <Titulo></Titulo>
+   
     
-    <div> 
-        
-        {/* 
-        <ul>
-          
-            <li key ={Productos.id}>
-              <h3>{Productos.name}</h3>
-              <img>{Productos.Image}</img>
-              <p>$ {Productos.precio}</p>
+      <div>
+            <img className='imagen-producto' src={ProductoEncontrado.Image} ></img>
+            <h3>{ProductoEncontrado.name}</h3>
+            <p>$ {ProductoEncontrado.precio}</p>
+            
+            
+      </div>      
+    
 
-
-            </li>
-
-          
-          
-          
-
-
-        </ul>
- */}
-
-    </div>
+   
+  
+  
+  
+  </div>
   )
+  
 }
  export default Productos;

@@ -5,19 +5,24 @@ import all_product from '../../assets/productos/all_product'
 import "./index.css"
 
 
+
  export const Product = () => {
+
+
+
   console.log(all_product);
   return (
     <div  >
       <Titulo></Titulo>
-      <ul >
-          <h1>LISTA DE PRODUCTOS</h1>
+      <h1>LISTA DE PRODUCTOS</h1>
+      <ul className='lista-productos'>
+          
           {all_product.map((product)=>{
             return (
 
-            <li key ={product.id}>
+            <li className='tarjeta-producto' key ={product.id}>
             
-            <img className='imagenes' src={product.Image} ></img>
+            <img className='imagen-producto' src={product.Image} ></img>
             <h3>{product.name}</h3>
             <p>$ {product.precio}</p>
             <Link to={`/productos/${product.id}`}>Ver producto</Link>
@@ -33,7 +38,7 @@ import "./index.css"
 
 
       </ul>
-
+      
     
     </div>
   )
