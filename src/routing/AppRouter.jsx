@@ -13,7 +13,7 @@ import Home from '../views/home/index';
     <Route  exact path="/" element={<Home />} />
     <Route exact path="/productos" element={<Product />} />
     <Route path="productos/:id" element={<Productos />} />
-    {/* <Route path="carrito" element={<Carrito />} /> */}
+    <Route path="carrito" element={<Carrito />} />
 
 
     </Routes>

@@ -1,25 +1,13 @@
-h1{
-    text-align: center;
-    padding: 50px;
-}
-.lista-productos {
-    display: flex;/*sirve para colocar imagen a un lado texto al otro*/
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    box-sizing: border-box;
-    list-style: none;
+.tarjeta-producto2 {
     
-  }
-  
-  .tarjeta-producto {
     background-color: #e783d0;
     border: 3px solid ;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 50px;
-    width: calc(33.33% - 10px);
+    width: calc(33.33%  20px);
     text-align: center;
+    justify-content: center;
   }
   
   .imagen-producto {
@@ -31,4 +19,3 @@ h1{
     margin-top: 10px;
     align-items: center;
   }
-  

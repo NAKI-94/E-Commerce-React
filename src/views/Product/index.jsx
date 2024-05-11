@@ -20,7 +20,7 @@ import "./index.css"
           {all_product.map((product)=>{
             return (
 
-            <li className='tarjeta-producto' key ={product.id}>
+            <li className='tarjeta-producto' key ={product.id.toString}>
             
             <img className='imagen-producto' src={product.Image} ></img>
             <h3>{product.name}</h3>
