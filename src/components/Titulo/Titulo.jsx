@@ -1,6 +1,5 @@
 import "./titulo.css"
 import Diosasolo from "../../assets/img/Diosasolo.png"
-import Diosa from "../../assets/img/Diosa.png"
 
 import React from "react"
 import { Link } from "react-router-dom"
@@ -19,8 +18,9 @@ return (<>
     <ul className="menu">
     <li><Link to ="/">Inicio</Link></li>
     <li><Link to ="/Productos">Productos</Link></li>
-    <li><a href="https://wa.me/+573188327717">Contacto</a></li>
-    <li><a href="#!">Carrito</a></li>
+    <li><Link to ="/carrito">Carrito</Link></li>
+    <li><Link to ="https://wa.me/+573188327717">Contacto</Link></li>
+    
    
     </ul>
 </div>

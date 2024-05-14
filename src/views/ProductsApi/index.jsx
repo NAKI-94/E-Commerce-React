@@ -2,14 +2,24 @@
 import { useParams } from 'react-router-dom';
 import all_product from '../../assets/productos/all_product'
 import "./index.css"
-
 import Titulo from '../../components/Titulo/Titulo';
+import { useDispatch } from 'react-redux';
+import accionesDelCarrito from "../../slicers/carrito"
 
 const Producto = () => {
   const {id} =useParams()
+
+  const dipatch = useDispatch();
    
    const ProductoEncontrado =all_product.find(producto => producto.id == id)
    console.log(ProductoEncontrado);
+
+
+
+   const handleAgregarAlCarrito = () => {
+    console.log("Agregando al carrito", ProductoEncontrado);
+    dipatch(accionesDelCarrito.agregarAlCarrito(ProductoEncontrado));
+  };
  
   return (
     <div>
@@ -20,6 +30,10 @@ const Producto = () => {
             <img className='imagen-producto' src={ProductoEncontrado.Image} ></img>
             <p>{ProductoEncontrado.descripcion}</p>
             <p>$ {ProductoEncontrado.precio}</p>
+            <button onClick={() => handleAgregarAlCarrito()}>
+              Agregar al carrito
+            </button>
+
             
             
       </div>      

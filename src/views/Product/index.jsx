@@ -6,7 +6,7 @@ import "./index.css"
 
 
 
- export const Product = () => {
+ export const Products = () => {
 
 
 
@@ -17,15 +17,15 @@ import "./index.css"
       <h1>LISTA DE PRODUCTOS</h1>
       <ul className='lista-productos'>
           
-          {all_product.map((product)=>{
+          {all_product.map((Products)=>{
             return (
 
-            <li className='tarjeta-producto' key ={product.id.toString}>
+            <li className='tarjeta-producto' key ={Products.id.toString}>
             
-            <img className='imagen-producto' src={product.Image} ></img>
-            <h3>{product.name}</h3>
-            <p>$ {product.precio}</p>
-            <Link to={`/productos/${product.id}`}>Ver producto</Link>
+            <img className='imagen-producto' src={Products.Image} ></img>
+            <h3>{Products.name}</h3>
+            <p>$ {Products.precio}</p>
+            <Link to={`/productos/${Products.id}`}>Ver producto</Link>
             </li>
 
             )
@@ -44,4 +44,4 @@ import "./index.css"
   )
 }
 
-export default Product;
+export default Products;
