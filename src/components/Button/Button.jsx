@@ -8,9 +8,9 @@ export default function Button (){
     return (
      <> 
      <Link to="/productos">
-    <button className="button">Ver Productos
-
-    </button>
+     <div class="container-producto">
+		        <div class="btn"><a href="#">VER PRODUCTOS</a></div>
+            </div>
     </Link>
     </>  
     )
