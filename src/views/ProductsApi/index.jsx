@@ -30,8 +30,11 @@ const Producto = () => {
             <img className='imagen-producto' src={ProductoEncontrado.Image} ></img>
             <p>{ProductoEncontrado.descripcion}</p>
             <p>$ {ProductoEncontrado.precio}</p>
-            <button onClick={() => handleAgregarAlCarrito()}>
-              Agregar al carrito
+
+            <button className="btn-agrecar"  onClick={() => handleAgregarAlCarrito()}>
+              <div class="container-agrecar">
+		        <div class="btn"><a href="#">AGREGAR AL CARRITO</a></div>
+            </div>
             </button>
 
             

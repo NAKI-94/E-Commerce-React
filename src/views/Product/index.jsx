@@ -25,7 +25,13 @@ import "./index.css"
             <img className='imagen-producto' src={Products.Image} ></img>
             <h3>{Products.name}</h3>
             <p>$ {Products.precio}</p>
-            <Link to={`/productos/${Products.id}`}>Ver producto</Link>
+            <Link to={`/productos/${Products.id}`} >
+            <button className="boton-producto">
+              <div className="container-p">
+		            <div className="btn"><a href="#">VER PRODUCTO</a></div>
+            </div>
+            </button>
+              </Link>
             </li>
 
             )

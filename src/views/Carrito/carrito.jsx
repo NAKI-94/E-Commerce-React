@@ -12,9 +12,11 @@ const renderizarProductos = (productos) => {
       <img className='imagen-producto' src={producto.Image} ></img>
             <h3>{producto.name}</h3>
             <p>$ {producto.precio}</p>
-            <div class="container-carrito">
+            <button className="btn-carrito"  onClick={() => handleAgregarAlCarrito()}>
+              <div class="container-carrito">
 		        <div class="btn"><a href="#">ELIMINAR</a></div>
             </div>
+            </button>
     </li>
   ));
 };
