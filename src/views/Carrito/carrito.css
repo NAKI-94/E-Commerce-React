@@ -27,7 +27,7 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
-.container .btn {
+.container-carrito .btn {
 	position: relative;
 	top: 0;
 	left: 0;
@@ -38,7 +38,7 @@
 	justify-content: center;
 	align-items: center;
 }
-.container .btn a {
+.container-carrito .btn a {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -62,10 +62,10 @@
 	transition: 0.5s;
 	backdrop-filter: blur(15px);
 }
-.container .btn:hover a {
+.container-carrito .btn:hover a {
 	letter-spacing: 3px;
 }
-.container .btn a::before {
+.container-carrito .btn a::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -77,10 +77,10 @@
 	transition: 0.5s;
 	filter: blur(0px);
 }
-.container .btn:hover a::before {
+.container-carrito .btn:hover a::before {
 	transform: skewX(45deg) translate(200px);
 }
-.container .btn::before {
+.container-carrito .btn::before {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -93,14 +93,14 @@
 	transition: 0.5s;
 	transition-delay: 0.5;
 }
-.container .btn:hover::before /*lightup button*/ {
+.container-carrito .btn:hover::before /*lightup button*/ {
 	bottom: 0;
 	height: 50%;
 	width: 80%;
 	border-radius: 30px;
 }
 
-.container .btn::after {
+.container-carrito .btn::after {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -113,20 +113,20 @@
 	transition: 0.5s;
 	transition-delay: 0.5;
 }
-.container .btn:hover::after /*lightup button*/ {
+.container-carrito .btn:hover::after /*lightup button*/ {
 	top: 0;
 	height: 50%;
 	width: 80%;
 	border-radius: 30px;
 }
-.container .btn:nth-child(1)::before, /*chnage 1*/
-.container .btn:nth-child(1)::after {
+.container-carrito .btn:nth-child(1)::before, /*chnage 1*/
+.container-carrito .btn:nth-child(1)::after {
 	background: #ff1f71;
 	box-shadow: 0 0 5px #ff1f71, 0 0 15px #ff1f71, 0 0 30px #ff1f71,
 		0 0 60px #ff1f71;
 }
-.container .btn:nth-child(2)::before, /* 2*/
-.container .btn:nth-child(2)::after {
+.container-carrito .btn:nth-child(2)::before, /* 2*/
+.container-carrito .btn:nth-child(2)::after {
 	background: #2db2ff;
 	box-shadow: 0 0 5px #2db2ff, 0 0 15px #2db2ff, 0 0 30px #2db2ff,
 		0 0 60px #2db2ff;
