@@ -4,6 +4,8 @@ import Product from '../views/Product/index';
 import Productos from '../views/ProductsApi/index';
 import Home from '../views/home/index';
 import Carrito from '../views/Carrito/carrito';
+import Formulario from '../components/Formulario/Formulario';
+
 
 ;
 
@@ -15,10 +17,11 @@ import Carrito from '../views/Carrito/carrito';
     <Route exact path="/productos" element={<Product />} />
     <Route path="productos/:id" element={<Productos />} />
     <Route  path="carrito" element={<Carrito />} />
+    <Route  path="formulario" element={<Formulario />} />
 
 
     </Routes>
-    <Link to="/carrito">Ver Carrito</Link> 
+     
 
    </BrowserRouter>
   );

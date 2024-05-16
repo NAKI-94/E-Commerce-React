@@ -12,7 +12,14 @@ const carritoSlice =createSlice({
             const producto =action.payload;
             estadoActual.productos.push(producto)
         },
+        
+        eliminar: (state, action)=>{
+            const id =action.payload;
+            state.productos=state.productos.filter(producto=> producto.id !== id)
+
+        }
     },
+
 
 });
 export const carritoReducer= carritoSlice.reducer;
