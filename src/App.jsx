@@ -3,6 +3,7 @@ import './App.css'
 import AppRouter from './routing/AppRouter'
 import store from './Store'
 import { Provider } from 'react-redux'
+import Footer from './components/Footer/Footer'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -10,8 +11,9 @@ function App() {
     <>
    <Provider store={store}>
     <AppRouter></AppRouter>
+    
     </Provider>
-
+    
     </>  
   )
 }

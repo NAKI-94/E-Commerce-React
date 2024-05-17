@@ -1,15 +1,16 @@
 .cuerpo{
     display: flex;
     position: relative;
-    margin: 8rem 0.89rem;
+    margin: 5rem 0.89rem;
     flex-wrap: wrap;
-    width: 100%;
+    width: 500%;
     color: #0a0a0a;
+
    
 }
 
  h2 {
-    font-size: 100px;
+    font-size: 90px;
 }
 p{
     font-size: 50px;

@@ -11,7 +11,7 @@ return (<>
 <div className="container" >
     <div className="logo">
     
-       <img src={Diosasolo} alt=""></img> 
+       <img className="logo1" src={Diosasolo} alt=""></img> 
       
     </div>
 
@@ -20,7 +20,7 @@ return (<>
     <li><Link to ="/Productos">Productos</Link></li>
     <li><Link to ="/carrito">Carrito</Link></li>
     <li><Link to ="https://wa.me/+573188327717">Contacto</Link></li>
-    <li><Link to ="/formulario">Loguin</Link></li>
+    <li><Link to ="/formulario">Login</Link></li>
     
    
     </ul>

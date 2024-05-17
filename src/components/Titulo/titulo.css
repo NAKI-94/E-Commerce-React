@@ -8,8 +8,8 @@
   display: flex;
   justify-content: space-around;
   padding: 0px;
-  height: 250px;
-  box-shadow: 0 1px 3px --2px rgb(237, 227, 227);
+  height: 150px;
+ /*  box-shadow: 0 1px 3px --2px rgb(237, 227, 227); */
 }
 /* .container {
   display: flex;
@@ -44,10 +44,18 @@ header {
 }
 
 
-.logo {
-  display: flex;
+.logo1 {
+  display:block;
+  position: absolute;
+  padding: 0px;
+  margin: -120px;
+  left:100px;
+  top: 50px;
   align-items: center;
-  gap: 10px;
+  max-width: 500px;
+  max-height:300px;
+  
+
 }
 
 
@@ -136,7 +144,7 @@ html {
 
 body,
 html {
- 
+ width: 100%;
   background: #e699ec;
   font-family: "Pacifico", sans-serif;
 }
@@ -144,23 +152,25 @@ html {
 .menu {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:start;
   max-width: 720px;
   margin: 0 auto;
   height: 50vh;
   list-style: none;
+  padding-inline-start: 20%;
+  padding: 3%;
 }
 
 .menu li {
   display: flex;
-  width: 125px;
-  height: 50px;
+  width: 105px;
+  height: 100px;
   transition: background-position-x 0.9s linear;
   text-align: center;
   left: 0%;
 
   a {
-    font-size: 22px;
+    font-size: 30px;
     color: #777;
     text-decoration: none;
     transition: all 0.45s;

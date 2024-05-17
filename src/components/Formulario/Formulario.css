@@ -5,7 +5,7 @@ form{
     background-color: rgba(21, 11, 11, 0.13);
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 50%;
+    top: 60%;/* PARA SUBIR O BAJAR EL FORMULARIO*/
     left: 50%;
     border-radius: 10px;
     backdrop-filter: blur(10px);

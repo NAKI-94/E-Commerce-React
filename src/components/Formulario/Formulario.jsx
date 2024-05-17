@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Formulario.css"
 import Titulo from "../Titulo/Titulo";
+import Footer from "../Footer/Footer";
 
 
 const Formulario = () => {
@@ -80,15 +81,17 @@ const Formulario = () => {
           <div class="go"><i class="fab fa-google"></i>  Whatsapp</div>
           <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
         </div>
-  <div>
+  {/* esto es para mostrar en lista lo que se ingresa 
+   <div>
     {lista.map((el, idx) => (
       <p key={idx.toString()}>{el}</p>
     ))}
-  </div>
+  </div> */}
 </form>
-      
+      <Footer></Footer>
     </>
   );
+
 };
 
 export default Formulario;
