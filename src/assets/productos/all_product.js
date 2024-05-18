@@ -62,7 +62,7 @@ let all_product =[
         id:8,
         name:"Polvo de adas",
         Image:polvo_adas,
-        precio: 12.000,
+        precio: 12000,
         descripcion:"Puedes aplicarlo en el rostro, pecho, hombro, brazos, y si quieres que te dure mucho más puedes sellarlo con un poquito de fijador o tónico de rosas. Trae muchísimo contenido y el aplicador deposita en tu piel la cantidad necesaria para lucir brillitos en la zona aplicada",
     },
 ];
