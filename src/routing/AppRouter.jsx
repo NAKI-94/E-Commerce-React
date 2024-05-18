@@ -5,6 +5,7 @@ import Productos from '../views/ProductsApi/index';
 import Home from '../views/home/index';
 import Carrito from '../views/Carrito/carrito';
 import Formulario from '../components/Formulario/Formulario';
+import Pagos from '../components/Pagos/Pagos';
 
 
 ;
@@ -18,6 +19,7 @@ import Formulario from '../components/Formulario/Formulario';
     <Route path="productos/:id" element={<Productos />} />
     <Route  path="carrito" element={<Carrito />} />
     <Route  path="formulario" element={<Formulario />} />
+    <Route  path="/pagos" element={<Pagos />} />
 
 
     </Routes>
