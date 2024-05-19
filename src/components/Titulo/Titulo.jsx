@@ -1,10 +1,19 @@
 import "./titulo.css"
 import Diosasolo from "../../assets/img/Diosasolo.png"
+import React, { useState } from 'react';
 
-import React from "react"
+
 import { Link } from "react-router-dom"
 
 export default function Titulo(){
+    const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+
+    
 return (<>
 <header>
 
@@ -15,7 +24,13 @@ return (<>
       
     </div>
 
-    <ul className="menu">
+    <div className="menu-toggle" onClick={toggleMenu}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+    <ul className={`menu ${menuOpen ? 'show' : ''}`}>
     <li><Link to ="/">Inicio</Link></li>
     <li><Link to ="/Productos">Productos</Link></li>
     <li><Link to ="/carrito">

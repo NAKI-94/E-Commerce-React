@@ -195,4 +195,54 @@ html {
     background-position-x: 390px;
   }
 }
-/*efecto para el h1*/
+/*responsive*/
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu a {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+  }
+}
