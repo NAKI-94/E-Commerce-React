@@ -50,7 +50,13 @@ const Carrito = () => {
       <h1>Carrito de compras</h1>
       <ul>{renderizarProductos(productosAgregados,handleEliminar)}</ul>
       <p className="valor-a-pagar">Valor a pagar: ${total.toFixed(2)}</p>
-      <Link to="/pagos">Pagar</Link>
+      <Link to="/pagos">
+      <button className="boton-pagar">
+              <div className="container-p">
+		            <div className="btn"><a href="#">PAGAR</a></div>
+            </div>
+            </button>
+      </Link>
     </div>
     
   );

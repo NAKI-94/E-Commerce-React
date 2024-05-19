@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useSelector} from "react-redux";
 import Titulo from '../Titulo/Titulo';
+import "./Pago.css"
 
 export const Pagos = () => {
     const productosAgregados = useSelector(
@@ -58,7 +59,7 @@ export const Pagos = () => {
         <>
           <Titulo></Titulo>
           <div className="form-container">
-            <h2>Formulario de Pago</h2>
+            <h2 style={{textAlign:"center"}}>Formulario de Pago</h2>
             <form onSubmit={handleSubmit} className="payment-form">
               <div className="form-group">
                 <label>Nombre Completo</label>
